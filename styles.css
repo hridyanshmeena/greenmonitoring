@@ -1,0 +1,139 @@
+
+/* General Page Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #2d672d;
+}
+
+/* Form Styles */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Input Fields */
+form input[type="text"], 
+form input[type="password"], 
+form input[type="email"], 
+form input[type="tel"], 
+form textarea, 
+form select {
+  width: calc(50% - 10px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+form input[type="text"]:focus, 
+form input[type="password"]:focus, 
+form input[type="email"]:focus, 
+form input[type="tel"]:focus, 
+form textarea:focus, 
+form select:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Submit Button */
+/* Submit Button - Center Alignment */
+form button, .btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  display: block; /* Ensures it acts as a block-level element */
+  margin: 20px auto; /* Centers it horizontally */
+  width: auto; /* Keeps the button width adaptable */
+}
+
+/* Button Hover Effect */
+form button:hover, .btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+form p {
+  width: 100%; /* Ensures it spans the full width */
+  text-align: center; /* Centers the text */
+  margin-top: 10px; /* Adds spacing above the text */
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Page Header/Footer */
+header, footer {
+  background-color: #2d672d;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+header a, footer a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form input[type="text"], 
+  form input[type="password"], 
+  form input[type="email"], 
+  form input[type="tel"], 
+  form textarea, 
+  form select {
+      width: 100%;
+  }
+
+  form button, .btn {
+      width: 100%;
+  }
+}
